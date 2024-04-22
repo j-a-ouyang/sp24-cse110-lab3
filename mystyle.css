@@ -18,7 +18,7 @@ body {
   }
 
   h3 {
-    color: color-mix(in lch, red, yellow);
+    color: color-mix(in lch, red 50%, yellow);
     background-color: var(--fantaorange, orange); 
     margin-left: 1cm;
   }
