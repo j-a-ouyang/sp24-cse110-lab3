@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>G.R.O.S.S. Meeting Minutes</title>
-        <link rel="icon" type="image/x-icon" href="/images/visip.ico">
+        <link rel="stylesheet" href="mystyle.css">
     </head>
     <body>
     <footer>
@@ -30,8 +30,8 @@
         <section>
             <h1>Attendance</h1>
                 <ul>
-                    <li>Calvin</li>
-                    <li>Hobbes</li>
+                    <li class = "c">Calvin</li>
+                    <li><span class = tiger>Hobbes</span></li>
                 </ul>
             <h2>Agenda</h2>
                 <ol>
@@ -44,16 +44,19 @@
                     Update 1: <b>Hobbes</b> has promoted himself to <strong>El Tigre Numero Uno!</strong>
                 </p>
                 <p>
-                    Update 2: <i><span style="color:red">Calvin is not happy.</span></i>
+                    <div class="calvinbox">Update 2: <i><span style="color:black">Calvin is not happy.</span></i></div>
                 </p>
                 <p>
-                    Update 3: <em>Hobs = GRAT</em>
+                    <div class="box">Update 3: <em>Hobs = GRAT</em></div>
                 </p>
             <h3>Decisions Reached</h3>
             <ul>
                 <li>Calvin and Hobbes reach a truce.</li>
                 <li>Hobbes suggests Susie should be allowed to join the club.</li>
             </ul>
+        </section>
+        <section>
+            <div class="tigerbox">hobs still = GRAT</div>
         </section>
         <section>
             <h1>Images</h1>
@@ -64,35 +67,45 @@
             />
         </section>
         <section>
+            
             <h1>Video</h1>
             <h2>Celebratory cartoon watched by Calvin and Hobbes</h2>
+            <div class = "tvbox">
+                <div class = "tvboxwindows">
             <video src="videos/spy.mp4" controls>
                 <p>    
                   <a href="videos/spy.mp4">Spy</a>
                 </p>
             </video>
-            <h2>Isolated audio</h2>
-            <p>
+            </div>
+            <div class = "tvboxwindows">
             <audio controls>
                 <source src="videos/spy.ogg" type="audio/ogg">
               </audio>   
-            </p>
+            </div>
+            <div class = "tvboxwindows">
             <details>
                 <summary>Audio Origin</summary>
                 <p>This audio is from Sonic Generations and is titled "Stardust Speedway - Bad Future".</p>
               </details> 
+            </div>
+            </div>
         </section>
 
         <section>
             <h1>Calvin's Homework</h1>
+            
             <form>
+                <div class="homeworkgrid">
+                    <div class="homeworkquestion">
                 <fieldset>
                     <label for="gname">Given name</label><br>
                     <input type="text" id="gname" name="gname"><br>
                     <label for="sname">Surname:</label><br>
                     <input type="text" id="sname" name="sname">
                 </fieldset>
-                
+                </div>
+                <div class="homeworkquestion">
                 <fieldset>
                     <legend>How are you feeling today?</legend>
                     <input type="radio" id="happy" name="emotion" value="h" />
@@ -102,7 +115,9 @@
                     <input type="radio" id="angry" name="emotion" value="a" />
                     <label for="angry">Angry</label><br/>
                 </fieldset>
+                </div>
 
+                <div class="homeworkquestion">
                 <fieldset>
                     <input type="checkbox" id="blue" name="blue" value="blue">
                     <label for="blue"> I like the color blue</label><br>
@@ -111,12 +126,16 @@
                     <input type="checkbox" id="yellow" name="yellow" value="yellow">
                     <label for="yellow"> I like the color yellow</label><br>
                 </fieldset>
+            </div>
 
+            <div class="homeworkquestion">
                 <fieldset>
                     <label for="today">Today's date:</label>
                     <input type="date" id="today" name="todaysdate" value="1994-01-01" min="2020-01-01" max="2024-12-31"/>
                 </fieldset>
+            </div>
 
+            <div class="homeworkquestion">
                 <fieldset>
                     <label for="favorite-number">Favorite number from 1-3:</label>
                     <input list="numbers" id="favorite-number" name="favorite-number" />
@@ -126,7 +145,8 @@
                         <option value="3"></option>
                     </datalist>
                 </fieldset>
-
+            </div>
+            <div class="homeworkquestion">
                 <fieldset>
                     <label for="movie">What is your favorite movie genre, out of the following options?:</label>
                     <select name="movie" id="movie">
@@ -136,19 +156,25 @@
                         <option value="Horror">Horror</option>
                     </select> 
                 </fieldset>
+            </div>
 
-
+            <div class="homeworkquestion">
                 <fieldset>
                     <label for="thoughts">Additional Thoughts:</label> <br>
                     <textarea id="thoughts" name="thoughts" rows="4" cols="20">
                      </textarea>
                 </fieldset>
+            </div>
 
+            <div class="homeworkquestion">
                 <fieldset>
                     <button type="button">Pointless Button (Warning: Pointless)</button> 
                 </fieldset>
+            </div>
+            </div>
             </form>
         </section>
+
     </main>
   </body>
 </html>
