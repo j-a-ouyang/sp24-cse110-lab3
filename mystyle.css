@@ -18,7 +18,7 @@ body {
   }
 
   h3 {
-    color: color-mix(in srgb, #FFFFFF 99%, #FFFF00 100%);
+    color: color-mix(in lch, red, yellow);
     background-color: var(--fantaorange, orange); 
     margin-left: 1cm;
   }
