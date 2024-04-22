@@ -19,7 +19,7 @@ body {
 
   h3 {
     color: var(--vantablack, black);
-    background-color: color-mix(in srgb, yellow, red);
+    background-color: color-mix(in srgb, #FF0000 99%, #FFFF00);
     margin-left: 1cm;
   }
   /* Here is a comment.*/
