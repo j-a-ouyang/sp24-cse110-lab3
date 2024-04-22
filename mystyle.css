@@ -18,8 +18,8 @@ body {
   }
 
   h3 {
-    color: var(--vantablack, black);
-    background-color: color-mix(in srgb, #FF0000 99%, #FFFF00);
+    color: color-mix(in srgb, #FFFFFF 99%, #FFFF00 100%);
+    background-color: var(--fantaorange, orange); 
     margin-left: 1cm;
   }
   /* Here is a comment.*/
